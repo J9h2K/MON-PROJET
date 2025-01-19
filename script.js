@@ -1,10 +1,30 @@
 // 🔧 Liste des candidats admissibles
 const candidatsAdmissibles = [
-    "Jean Dupont",
-    "Alice Martin",
-    "Mohamed Camara",
-    "Fatou Diouf",
-    "Pierre Durand"
+    "17JM001",
+    "17JM002",
+    "17JM003",
+    "17JM004",
+    "17JM004",
+    "17JM004",
+    "17JM004",
+    "17JM004",
+    "17JM004",
+    "17JM004",
+    "17JM004",
+    "17JM004",
+    "17JM004",
+    "17JM004",
+    "17JM004",
+    "17JM004",
+    "17JM004",
+    "17JM004",
+    "17JM004",
+    "17JM004",
+    "17JM004",
+    "17JM004",
+    "17JM004",
+    "17JM004",
+    "17JM005"
 ];
 
 // ✅ Fonction pour vérifier le résultat du candidat
@@ -14,14 +34,15 @@ function verifierResultat() {
 
     // Vérification de la saisie
     if (nom === "") {
-        message.textContent = "Veuillez entrer votre nom complet.";
+        message.textContent = "Verifier la structure du matricule et Réssayer.";
         message.style.color = "red";
         return;
     }
 
     // Vérification de l'admissibilité avec gestion de la casse
     if (candidatsAdmissibles.includes(nom)) {
-        message.textContent = `🎉 Félicitations ${nom}, vous êtes admissible !`;
+        message.textContent = `🎉 Félicitations ${nom}, vous êtes admissible !
+                                   Rendez-vous à la prochaine Etape !`;
         message.style.color = "green";
     } else {
         // Si le nom n'est pas dans la liste
